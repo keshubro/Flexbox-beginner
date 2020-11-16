@@ -1,45 +1,21 @@
 /* Your code goes here */
 
-
-
-.grid{
+.vcenter{
     display: flex;
+    border: 1px solid #fff;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    `
 }
 
-.gutters .div {
-    padding: 10px 0 0 10px;
+nav{
+    width: 400px;
 }
 
-.gutters{
-    margin: -8px 0 8px -8px; 
-}
-
-.half{
-    flex-basis: 50%;
-}
-
-.third{
-    flex-basis: 33.33333%;
-}
-
-.fourth{
+li{
+    list-style: none;
     flex-basis: 25%;
+    
 }
-
-.fifth{
-    flex-basis: 20%;
-}
-
-.sixth{
-    flex-basis: 16.66666%;
-}
-
-.grid div div{
-    background-color: #555;
-    padding: 5px;   
-    margin: 5px;
-}
-
-
-
 
