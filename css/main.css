@@ -1,21 +1,36 @@
 /* Your code goes here */
 
-.vcenter{
+/*
+- Variable Image Size
+- Image left or right
+- Image vertical alignment
+- Nesting
+- Responsive
+- Clearfix
+*/
+
+
+.media {
     display: flex;
+    flex-wrap: nowrap;
     border: 1px solid #fff;
-    align-items: center;
-    justify-content: center;
-    height: 150px;
-    `
+    margin-right: 5px;
 }
 
-nav{
-    width: 400px;
+.figure {
+    width: 30%;
+    align-self: flex-start;
+    margin: 5px;
 }
 
-li{
-    list-style: none;
-    flex-basis: 25%;
+.media-body {
+    width: 70%;
+    flex-grow: 1;
     
 }
+
+p{
+    margin: 0 10px 20px 10px;
+}
+
 
