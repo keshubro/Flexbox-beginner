@@ -1,36 +1,47 @@
 /* Your code goes here */
 
 /*
-- Variable Image Size
-- Image left or right
-- Image vertical alignment
-- Nesting
-- Responsive
-- Clearfix
+- 1 header, 3 columns, 1 footer
+- 3 columns always same height
+- Footer sticky at bottom
+- Content first in HTML
+- Content fluid size
+- Minimal markup
 */
 
-
-.media {
+body{
     display: flex;
-    flex-wrap: nowrap;
-    border: 1px solid #fff;
-    margin-right: 5px;
+    flex-direction: column;
+    min-height: 100vh; /* Should take at least the minimum available height on the screen */
+    margin: 0;
 }
 
-.figure {
-    width: 30%;
-    align-self: flex-start;
-    margin: 5px;
-}
-
-.media-body {
-    width: 70%;
+#main{
+    display: flex;
     flex-grow: 1;
+}
+
+#content{
+    flex: 4 1 0%;
+}
+
+
+#secondary{
+    flex: 1 1 0%;
+    order: -1;
+}
+
+#tertiary{
+    flex: 1 1 0%;
     
 }
 
-p{
-    margin: 0 10px 20px 10px;
+#header, #footer{
+    text-align: center;
+    padding: 20px;
 }
 
-
+#main *{
+    padding: 20px;
+    border: 1px solid #555;
+}
